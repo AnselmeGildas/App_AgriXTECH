@@ -40,14 +40,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         elevation: 0,
         actions: <Widget>[
           Padding(padding: const EdgeInsets.only(right: 35),
             child: TextButton(
               child: const Text("Passer",style: TextStyle(color: Colors.black, fontSize: 18)), 
               onPressed:() {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SignUp()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
               },
             )
           ),
@@ -136,7 +136,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   curve: Curves.ease,
                 );
               } else {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SignUp()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
               }
             },
             child: Text(

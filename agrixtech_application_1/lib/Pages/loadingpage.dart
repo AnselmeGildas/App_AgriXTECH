@@ -26,7 +26,7 @@ class _DelayedHomePageState extends State<DelayedHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("assets/Images/Image1.jpg", 
-              height: 150,),
+              height: 150),
               const Padding(padding: EdgeInsets.only(top:100)),
 
             const CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(64, 212, 0, 1))),
