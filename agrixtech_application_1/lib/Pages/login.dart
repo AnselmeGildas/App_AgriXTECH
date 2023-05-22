@@ -11,7 +11,7 @@ class SignUp extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Page de connexion (Sign Up)",
+            Text("Sign Up",
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 28
