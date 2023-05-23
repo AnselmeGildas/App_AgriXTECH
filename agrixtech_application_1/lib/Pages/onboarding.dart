@@ -86,7 +86,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         children: [
           Image.asset(
             data['image']!,
-            height: 400,
+            height: data['image'] == "assets/Images/Onboarding_.png"? 400:300,
           ),
           const SizedBox(height: 32.0),
           Text(

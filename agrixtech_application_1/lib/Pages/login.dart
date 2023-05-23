@@ -27,9 +27,9 @@ class SignUp extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Image.asset("assets/Images/Trace.png", height: 100),
-                  const SizedBox(height:50),
-                  Image.asset("assets/Images/Image1.jpg", height: 150),
-                  const SizedBox(height: 15.0),
+                  const SizedBox(height:35),
+                  Image.asset("assets/Images/Image1.jpg", height: 120),
+                  const SizedBox(height: 13.0),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -76,10 +76,34 @@ class SignUp extends StatelessWidget {
                       ]
                     ),
                   ),
-                  const SizedBox(height: 10,),
+                  const SizedBox(height: 0,),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 25.0),
                     child: MyButton(rad: 6.0, butText: "Connexion"),
+                  ),
+                  const SizedBox(height: 40,),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal:25.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Divider(
+                            thickness: 0.5,
+                            color: Color.fromARGB(201, 158, 158, 158),
+                          )
+                        ),
+                        Text(
+                          "Se connecter avec"
+                        ),
+                        Expanded(
+                          child: Divider(
+                            thickness: 0.5,
+                            color: Color.fromARGB(201, 158, 158, 158),
+                          )
+                        ),
+                      ],
+                    ),
+                  
                   )
                 ],
               ),
