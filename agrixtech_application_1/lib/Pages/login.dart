@@ -115,23 +115,26 @@ class SignUp extends StatelessWidget {
                     ]
                   ),
                   const SizedBox(height: 15,),
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         "Pas encore inscrit ?",
                         style: TextStyle(
                           fontSize: 15,
                         ),
                       ),
-                      SizedBox(width: 7,),
-                      Text(
-                        "Inscrivez-vous",
-                        style: TextStyle(
-                          color: Color.fromRGBO(64, 212, 0, 1), 
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold
-                        ),
+                      const SizedBox(width: 5,),
+                      TextButton(
+                        child: const Text("Inscrivez-vous maintenant",
+                                    style: TextStyle(
+                                    color: Color.fromRGBO(64, 212, 0, 1), 
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold
+                        )), 
+                        onPressed: () {
+
+                        },
                       )
                     ],
                   )
