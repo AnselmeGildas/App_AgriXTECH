@@ -124,7 +124,7 @@ class SignUp extends StatelessWidget {
                           fontSize: 15,
                         ),
                       ),
-                      SizedBox(width: 8,),
+                      SizedBox(width: 7,),
                       Text(
                         "Inscrivez-vous",
                         style: TextStyle(
