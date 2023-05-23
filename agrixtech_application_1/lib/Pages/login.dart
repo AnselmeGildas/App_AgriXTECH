@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:agrixtech_application_1/Components/text_feild.dart';
 import 'package:agrixtech_application_1/Components/button.dart';
+import 'package:agrixtech_application_1/Components/squarre_tile.dart';
 
 class SignUp extends StatelessWidget {
   SignUp({super.key});
@@ -81,14 +82,14 @@ class SignUp extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 25.0),
                     child: MyButton(rad: 6.0, butText: "Connexion"),
                   ),
-                  const SizedBox(height: 40,),
+                  const SizedBox(height: 30,),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal:25.0),
                     child: Row(
                       children: [
                         Expanded(
                           child: Divider(
-                            thickness: 0.5,
+                            thickness: 0.4,
                             color: Color.fromARGB(201, 158, 158, 158),
                           )
                         ),
@@ -97,13 +98,42 @@ class SignUp extends StatelessWidget {
                         ),
                         Expanded(
                           child: Divider(
-                            thickness: 0.5,
+                            thickness: 0.4,
                             color: Color.fromARGB(201, 158, 158, 158),
                           )
                         ),
                       ],
                     ),
-                  
+                  ),
+                  const SizedBox(height: 15,),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children:[
+                      MysquareTile(
+                        linkImage: "assets/Images/search.png"
+                      )
+                    ]
+                  ),
+                  const SizedBox(height: 15,),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Pas encore inscrit ?",
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                      SizedBox(width: 8,),
+                      Text(
+                        "Inscrivez-vous",
+                        style: TextStyle(
+                          color: Color.fromRGBO(64, 212, 0, 1), 
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
